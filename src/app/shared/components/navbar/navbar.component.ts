@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
-import { Router } from "@angular/router";
+import { Router, RouterModule } from "@angular/router";
 import { AuthService } from "src/app/services/ticket-api";
 
 @Component({
@@ -10,6 +10,7 @@ import { AuthService } from "src/app/services/ticket-api";
     styleUrls: ['./navbar.component.css'],
     imports: [
         CommonModule,
+        RouterModule,
     ]
 })
 export class NavbarComponent {
