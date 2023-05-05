@@ -1,0 +1,26 @@
+<page-header title="Tickets">
+    <button routerLink="novo" class="btn">novo</button>
+</page-header>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Usuário</th>
+            <th>Status</th>
+            <th>Data de Criação</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ticket of tickets">
+            <td>{{ ticket.id }}</td>
+            <td>{{ ticket.title }}</td>
+            <td>{{ ticket.user.name }}</td>
+            <td>{{ ticket.status }}</td>
+            <td>{{ ticket.createdAt | date: "dd/MM/yyyy hh:mm:ss" }}</td>
+            <td><a href="#" [routerLink]="['ver', ticket.id]" class="link">ver</a></td>
+        </tr>
+    </tbody>
+</table>
