@@ -1,0 +1,15 @@
+<page-header title="Tickets">
+    <button routerLink="/tickets" class="btn">voltar</button>
+</page-header>
+
+<form [formGroup]="formGroup" (ngSubmit)="submit()" class="form">
+    <label class="label">
+        <span>Título</span>
+        <input type="text" formControlName="title">
+    </label>
+    <label class="label">
+        <span>Mensagem</span>
+        <textarea formControlName="message" cols="30" rows="10"></textarea>
+    </label>
+    <button type="submit" [disabled]="!formGroup.valid" class="btn btn-block">Salvar</button>
+</form>
