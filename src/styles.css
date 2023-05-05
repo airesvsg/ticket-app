@@ -191,3 +191,20 @@ body {
     color: #fff;
     border-radius: 5px;
 }
+
+/*---- page-header ----*/
+.page-header {
+    background-color: #FFF;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.page-header .title {
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.page-header .btn {
+    min-width: 150px;
+    margin-left: 10px;
+}
