@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="navbar box flex">
+        <div class="menu flex">
+            <h1 class="brand">ngTicket</h1>
+            <nav class="menu-items">
+                <a href="#" routerLink="/tickets" routerLinkActive="menu-item-current">Ticket</a>
+                <a href="#" routerLink="/cadastros" routerLinkActive="menu-item-current">Cadastros</a>
+            </nav>
+        </div>
+        <a href="#" *ngIf="showLogoutBtn()" (click)="logout()">Sair</a>
+    </div>
+</div>

@@ -161,3 +161,33 @@ body {
     background-color: #5c1349;
     color: #c6c6c6;
 }
+
+/*---- navbar ----*/
+.navbar {
+    margin: 25px 0;
+}
+
+.navbar .brand {
+    font-weight: 100;
+}
+
+.navbar a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #5c1349;
+}
+
+.navbar .menu-items {
+    margin-left: 25px;
+}
+
+.navbar .menu-items a {
+    display: inline-block;
+    padding: 8px 20px;
+}
+
+.navbar .menu-items a.menu-item-current {
+    background-color: #5c1349;
+    color: #fff;
+    border-radius: 5px;
+}
