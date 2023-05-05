@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { PageHeaderComponent } from './shared/components/page-header/page-header.component';
+import { AuthInterceptorModule } from './shared/interceptors/auth/auth-interceptor.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PageHeaderComponent } from './shared/components/page-header/page-header
     BrowserModule,
     CommonModule,
     HttpClientModule,
+    AuthInterceptorModule,
     AppRoutingModule,
     NavbarComponent,
     PageHeaderComponent,
