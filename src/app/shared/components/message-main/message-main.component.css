@@ -1,0 +1,30 @@
+.message-main {
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.title {
+    font-weight: 500;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    color: #5c1349;
+}
+
+.title span {
+    background-color: #5c1349;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.content {
+    padding: 15px;
+}
+
+.content div {
+    margin-bottom: 15px;
+}

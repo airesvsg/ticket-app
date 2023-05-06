@@ -1,0 +1,10 @@
+<div class="message-main">
+    <h2 class="title"><span>#{{ticket.id}}</span> {{ticket.title}}</h2>
+    <div class="content">
+        <div class="flex">
+            <p class="author">{{ticket.user.name}}</p>
+            <p class="created">{{ticket.createdAt | date: 'dd/MM/yyyy hh:mm:ss'}}</p>
+        </div>
+        <p>{{message?.message}}</p>
+    </div>
+</div>
