@@ -1,0 +1,6 @@
+<page-header title="Tickets">
+    <!-- button *ngIf="showForm" (click)="toggleAnswerForm()" class="btn">Cancelar</button -->
+    <button *ngIf="!showForm" routerLink="/tickets" class="btn">Voltar</button>
+</page-header>
+
+<ticket-view-form *ngIf="ticket" [ticket]="ticket"></ticket-view-form>

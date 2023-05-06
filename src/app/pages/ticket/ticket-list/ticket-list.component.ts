@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
 import { Subscription } from "rxjs";
-import { TicektStatus, Ticket, TicketService } from "src/app/services/ticket-api";
+import { Ticket, TicketService } from "src/app/services/ticket-api";
 
 @Component({
     selector: 'app-ticket-list',
