@@ -1,0 +1,9 @@
+<div class="message-list">
+    <div *ngFor="let message of messages" class="content hover">
+        <div>
+            <span>{{message.user.name}}</span>
+            <span>{{message.createdAt | date: 'dd/MM/yyyy hh:mm:ss'}}</span>
+        </div>
+        <p>{{message.message}}</p>
+    </div>
+</div>
