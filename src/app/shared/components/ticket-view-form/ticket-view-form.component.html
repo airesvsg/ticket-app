@@ -1,0 +1,4 @@
+<message-main [ticket]="ticket" [message]="mainMessage" *ngIf="ticket && mainMessage"></message-main>
+<message-form *ngIf="showForm" [ticketId]="ticket.id" (onCancel)="showForm = false" (ticketMessage)="updateMessages($event)"></message-form>
+<button *ngIf="showAnswerButton()" (click)="toggleAnswerForm()" class="btn btn-block">Responder</button>
+<message-list [messages]="messages"></message-list>
