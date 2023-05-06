@@ -1,0 +1,14 @@
+<form [formGroup]="formGroup" (ngSubmit)="submit()" class="form">
+    <label class="label">
+        <span>Mensagem</span>
+        <textarea formControlName="message" cols="30" rows="10"></textarea>
+    </label>
+    <label class="label">
+        <span>Status</span>
+        <input type="checkbox" formControlName="close"> Fechar chamado
+    </label>
+    <div class="actions">
+        <button type="button" (click)="cancel()" class="btn btn-disabled">Cancelar</button>
+        <button type="submit" [disabled]="!formGroup.valid" class="btn">Salvar</button>
+    </div>
+</form>
